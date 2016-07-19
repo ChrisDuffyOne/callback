@@ -1,0 +1,17 @@
+{
+  "name": "callback",
+  "version": "1.0.0",
+  "description": "A quick test program for callbacks",
+  "main": "callback.js",
+  "scripts": {
+    "test": "node callback.js"
+  },
+  "keywords": [
+    "Callback",
+    "test",
+    "trial",
+    "thinkful"
+  ],
+  "author": "Christopher Duffy",
+  "license": "ISC"
+}
