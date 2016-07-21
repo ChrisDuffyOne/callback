@@ -7,20 +7,20 @@ function progress(onStart, onProgress, onEnd) {
 
 progress(
 	function(timeUnit, onProgress, onEnd) {
-		function onStart(){
+		function delayCounter(){
 			setTimeout(function(){
 				timeUnit++;
 				if(timeUnit === 100){
 					onEnd(timeUnit);
 				}else if(timeUnit % 10 === 0){
 					onProgress(timeUnit);
-					onStart();
+					delayCounter();
 				}else if(timeUnit <= 99){
-					onStart();
+					delayCounter();
 				}
 			}, 25)
 		}
-		onStart(); 	
+		delayCounter();	
 	},
 	function(timeUnit){
 		var tenth = timeUnit/10;
